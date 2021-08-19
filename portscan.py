@@ -4,7 +4,7 @@
 import socket
 import sys
 
-# Meu terceiro script
+
 if len(sys.argv) <= 2 :
 
 	print "Modo de uso: 192.168.100.1 80"

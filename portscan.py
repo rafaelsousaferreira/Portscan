@@ -16,9 +16,10 @@ else :
 		ip = sys.argv[1]
 		porta = i
 
-		meusocket = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-		resposta = meusocket.connect_ex((ip,porta))
+		meu_socket = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
+		resposta = meu_socket.connect_ex((ip,porta))
 
 		if (resposta == 0) :
 
 			print (colored("\n \n [PORTA ABERTA]-->",'red'),porta)
+			meu_socket.close()
